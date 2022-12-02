@@ -1,0 +1,150 @@
+* {
+    margin: 0.7;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    /* background-image: linear-gradient(to right, #6058d1, #0c915e, #740f49); */
+    background: url('https://www.freetemplatesonline.com/wp-content/uploads/2021/01/3456765.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* container title */
+.container-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: white;
+    text-shadow: 3px 1px black;
+}
+
+/* container */
+.inputcol {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 60% 10%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.textarea {
+    min-height: 50px;
+    height: 45px;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    border-color: rgb(194, 123, 123);
+    font-size: 20px;
+    padding: 10px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    color: #134834;
+}
+
+.textarea::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(223, 105, 105);
+}
+
+.textarea::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a4a2b6;
+    cursor: pointer;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.buttoninput {
+    border-radius: 10px;
+    border-color: rgb(86, 166, 36);
+    background-color: white;
+    font-size: 20px;
+}
+
+.buttoninput:hover {
+    background-color: #090257;
+    color: rgb(221, 173, 173);
+}
+
+/* js */
+.todolist {
+    margin-top: 20px;
+}
+
+.itemall {
+    display: grid;
+    grid-template-columns: 60% 5% 5%;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.item,
+.check-button,
+.trash-button {
+    border: none;
+    background-color: white;
+    min-height: 50px;
+    padding: 10px 10px;
+}
+
+.item {
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    align-content: center;
+    font-size: 20px;
+}
+
+.check-button,
+.trash-button {
+    font-size: 15px;
+}
+
+.trash-button {
+    border-radius: 0 10px 10px 0;
+}
+
+.check-button:hover {
+    background-color: #2a5058;
+    color: white;
+}
+
+.trash-button:hover {
+    background-color: #83edf1;
+    color: rgb(39, 152, 135);
+}
+
+.checklist {
+    text-decoration: line-through;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+button,
+.check-button,
+.trash-button {
+    cursor: pointer;
+}
+.button {
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+}
